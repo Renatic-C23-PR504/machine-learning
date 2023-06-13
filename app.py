@@ -4,6 +4,8 @@ from PIL import Image
 import numpy as np
 from flask import Flask, request, jsonify, make_response, send_file
 import requests
+import re
+import base64
 from io import BytesIO
 
 
@@ -16,30 +18,33 @@ app = Flask(__name__)
 class_names = ['No DR', 'Mild', 'Moderate', 'Severe', 'Proliferative DR']
 
 
-# pertama masukin ke model ini dulu buat klasifikasi mata
+# eye and no-eye model
 eye_classification_model = tf.keras.models.load_model('.\Eyes_classification\Eyes_Classification_Model.h5')
-# baru masukin ke model ini buat klasifikasi penyakitnya
+# diabetic retinopathy model
 dr_classification_model = tf.keras.models.load_model('.\diabetic_retinopathy_classification\model_mobilenet_dr.h5')
 
 def transform_image(img, img_shape):
+    img = img.convert("RGB")
+    img = img.resize((img_shape, img_shape))
     input_arr = tf.keras.utils.img_to_array(img)
-    input_arr = tf.image.resize(input_arr, [img_shape, img_shape])
-    # input_arr = tf.cast(img, dtype=tf.float32)/255
+    input_arr = tf.cast(img, dtype=tf.float32)/255
     input_arr = np.expand_dims(input_arr, axis=0)
     return input_arr
     
 def predict_eye_image(input_arr):
     prediction = eye_classification_model.predict(input_arr)
-    if prediction[0] == 1:
+    # 0 mean that there are eye
+    # 1 mean that there are no eye
+    # it was because folder order
+    if np.round_(prediction[0]) == 0:
         return True
-    elif prediction[0] == 0:
+    elif np.round_(prediction[0]) == 1:
         return False
 
 def predict_dr_image(input_arr):
     prediction = dr_classification_model.predict(input_arr)
     predicted_class = class_names[np.argmax(prediction)]
     return predicted_class
-    
     
     """def predict():
     if 'image_url' in request.json:
@@ -82,10 +87,13 @@ def predict():
         image_url = request.json['image_url']
         response = requests.get(image_url)
         img = Image.open(BytesIO(response.content))
-        dr_img = transform_image(img, 350)
+        dr_img = transform_image(img, 224) # old model using 224x224
+        # dr_img = transform_image(img, 350) # new model using 350x350
         eye_img = transform_image(img, 150)
         
-        return jsonify({'shape': eye_img.tolist()})
+        # check the shape of the image
+        # return jsonify({'shape': list(eye_img.shape)})
+        # return jsonify({'shape': eye_img.tolist()})
     
         # make predictions to detect if image is a eye/retina
         eye_prediction = predict_eye_image(eye_img)
@@ -94,28 +102,18 @@ def predict():
             dict = {
                 'message': 'Diabetic Retinopathy Level',
                 'error': False,
-                'class': dr_prediction
+                'retina_detected': eye_prediction,
+                'dr_class': dr_prediction
             }
             return jsonify(dict)
         dict = {
             'message': 'Retina tidak terdeteksi',
             'error': False,
-            'class': eye_prediction
+            'retina_detected': eye_prediction,
+            'dr_class': dr_prediction
         }
         return jsonify(dict)
-        
-        
-        if img:
-            dict = {
-                'message': 'API SUCCESS',
-                'error': False
-            }
-            response = make_response(jsonify(dict))
-            response.headers['Content-Type'] = 'application/json'
-            response.status_code = 200
-
-            return response
-    
+           
     
 if __name__ == "__main__":
     app.run(debug = True)
