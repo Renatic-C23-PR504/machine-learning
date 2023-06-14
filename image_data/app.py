@@ -13,9 +13,9 @@ app = Flask(__name__)
 class_names = ['No DR', 'Mild', 'Moderate', 'Severe', 'Proliferative DR']
 
 # eye and no-eye model
-eye_classification_model = tf.keras.models.load_model('.\Eyes_classification\Eyes_Classification_Model.h5')
+eye_classification_model = tf.keras.models.load_model('./eyes_classification/Eyes_Classification_Model.h5')
 # diabetic retinopathy model
-dr_classification_model = tf.keras.models.load_model('.\diabetic_retinopathy_classification\model_mobilenet_dr.h5')
+dr_classification_model = tf.keras.models.load_model('./diabetic_retinopathy_classification/model_mobilenet_dr.h5')
 
 def transform_image(img, img_shape):
     img = img.convert("RGB")
@@ -79,7 +79,7 @@ def predict():
             'message': 'Retina tidak terdeteksi',
             'error': False,
             'retina_detected': eye_prediction,
-            'dr_class': dr_prediction
+            'dr_class': ''
         }
         return jsonify(dict)
     
