@@ -12,3 +12,10 @@ This repository is used to build machine learning models to predict whether a pe
 | Muhammad Fakhrul Amin - M131DSX1440    | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mfakhrulam)  | [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mfakhrulam/)       |
 | Muhammad Naufal Kusumajaya - M038DSX1492 | [![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/naufaljaya) | [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/naufal-kusumajaya-b27959155/)              |
 
+# Model Development
+## Clinic Data
+For machine learning algorithm, we use XGBoost Classifier. In terms of the features, there are eight variables: Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, and Age. And the output are binary, 0 if there is no diabetes and 1 if there is a diabetes. We also doing feature engineering so that our model get higher accuracy. At the end we got 94% accuracy.
+
+## Diabetic Retinopathy Classification
+For base model, we use MobileNet to get fast prediction and good accuracy. We also fine-tuning our base model so that our final model compatible with our dataset. Here are graphs showing accuracy and loss during training
+
