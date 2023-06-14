@@ -28,3 +28,48 @@ For base model, we use MobileNet to get fast prediction and good accuracy. We al
 | loss | 0.7776 |
 | val_loss | 0.7704 |
 
+# Mode Deployment
+For deployment we separate clinic data and diabetic retinopathy classification to avoid compatibility issue. Both are using Flask to deploy the model to Google Cloud Run
+## Clinic Data
+For dependecies all listed in [requirement.txt](https://github.com/Renatic-C23-PR504/machine-learning/blob/main/clinic-data/deployment/requirement.txt)
+### Endpoint
+#### POST
+```
+  POST/
+```
+##### Input
+| Key          | Info     | Data Type |
+| :----------- | :------- | :------- | 
+| `Pregnancies`    | Required | float |
+| `Glucose`   | Required | float |
+| `BloodPressure`  | Required | float |
+| `SkinThickness`    | Required | float |
+| `Insulin`   | Required | float |
+| `BMI`  | Required | float |
+| `DiabetesPedigreeFunction`    | Required | float |
+| `Age`   | Required | float |
+
+##### Output
+| Key          | Data Type |
+| :----------- | :------- | 
+| `prediction`    | boolean |
+
+## Diabetic Retinopathy Classification
+For dependecies all listed in [requirement.txt](https://github.com/Renatic-C23-PR504/machine-learning/blob/main/requirement.txt) 
+### Endpoint
+#### POST
+```
+  POST/predict
+```
+##### Input
+| Key          | Info     | Data Type |
+| :----------- | :------- | :------- | 
+| `img_url`    | Required | string |
+
+##### Output
+| Key          | Data Type |
+| :----------- | :------- | 
+| `dr_class`    | string |
+| `error`    | boolean |
+| `message`    | string |
+| `retina_detected`    | boolean |
