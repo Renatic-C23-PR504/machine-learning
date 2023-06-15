@@ -27,7 +27,7 @@ For machine learning algorithm, we use XGBoost Classifier. In terms of the featu
 
 ## Diabetic Retinopathy Classification
 For base model, we use MobileNet to get fast prediction and good accuracy. We also fine-tuning our base model so that our final model compatible with our dataset. Here are graphs showing accuracy and loss during training
-![metrics.png](https://github.com/Renatic-C23-PR504/machine-learning/blob/main/diabetic_retinopathy_classification/metrics.png)
+![metrics.png](https://raw.githubusercontent.com/Renatic-C23-PR504/machine-learning/main/assets/metrics.png)
 
 <!-- Tables -->
 | Metrics     | Score          |
