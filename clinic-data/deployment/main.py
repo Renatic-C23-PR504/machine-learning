@@ -3,18 +3,6 @@ from flask import Flask, request, jsonify, make_response
 
 app = Flask(__name__)
 
-# @app.route("/", methods=["GET"])
-# def index():
-#     dict = {
-#         'message': 'API SUCCESS',
-#         'status': 'success',
-#         'error': False
-#     }
-#     response = make_response(jsonify(dict))
-#     response.headers['Content-Type'] = 'application/json'
-#     response.status_code = 200
-#     return response
-
 @app.route("/", methods=["POST"])
 def index():
     try:
@@ -29,9 +17,19 @@ def index():
             DiabetesPedigreeFunction = data.get("DiabetesPedigreeFunction")
             Age = data.get("Age")
 
-            prediction = make_prediction(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age)
+            prediction, probabilty, advice = make_prediction(Pregnancies,Glucose,BloodPressure,SkinThickness,Insulin,BMI,DiabetesPedigreeFunction,Age)
             
-            return jsonify({"prediction":prediction})
+            if prediction == False and not (advice == "Kerja bagus" and prediction == False):
+                
+                return jsonify({
+                    "error": "Anomali data. Apakah data sudah benar?"
+                })
+            
+            return jsonify({
+                "prediction":prediction,
+                "probabilty":probabilty,
+                "advice":advice
+                })
         else:
             return "Wrong input"
     except Exception as e:
