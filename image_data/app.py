@@ -12,10 +12,12 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 app = Flask(__name__)
 class_names = ['No DR', 'Mild', 'Moderate', 'Severe', 'Proliferative DR']
 
+
+dir = os.path.dirname(os.path.abspath(__file__)) 
 # eye and no-eye model
-eye_classification_model = tf.keras.models.load_model('./eyes_classification/Eyes_Classification_Model.h5')
+eye_classification_model = tf.keras.models.load_model(os.path.join(dir, 'eyes_classification', 'Eyes_Classification_Model.h5'))
 # diabetic retinopathy model
-dr_classification_model = tf.keras.models.load_model('./diabetic_retinopathy_classification/model_mobilenet_dr.h5')
+dr_classification_model = tf.keras.models.load_model(os.path.join(dir, 'diabetic_retinopathy_classification', 'model_mobilenet_dr.h5'))
 
 def transform_image(img, img_shape):
     img = img.convert("RGB")
@@ -75,9 +77,8 @@ def predict():
                     'retina_detected': eye_prediction,
                     'dr_class': dr_prediction
                 }
-                
-                
                 return jsonify(dict)
+            
             dict = {
                 'message': 'Retina tidak terdeteksi',
                 'error': False,
@@ -85,6 +86,9 @@ def predict():
                 'dr_class': ''
             }
             return jsonify(dict)
+        else:
+            return jsonify({'error':True,
+                        'message':'image_url key not found'})
     except Exception as e:
         return jsonify({'error':True,
                         'message':str(e)})
