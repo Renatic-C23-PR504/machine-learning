@@ -11,7 +11,7 @@
 This repository is used to build machine learning models to predict whether a person has diabetes or not based on clinical data and to detect diabetic retinopathy based on eye images.
 
 # Resource
-* Dataset: For clinic data, we use [Diabetes Dataset on Kaggle](https://www.kaggle.com/datasets/mathchi/diabetes-data-set). For diabetic retinopathy classification we use [Diabetic Retinopathy Arranged Dataset on Kaggle](https://www.kaggle.com/datasets/amanneo/diabetic-retinopathy-resized-arranged)
+* Dataset: For clinic data, we use [Diabetes Dataset on Kaggle](https://www.kaggle.com/datasets/mathchi/diabetes-data-set). For diabetic retinopathy classification we use [Diabetic Retinopathy Arranged Dataset on Kaggle](https://www.kaggle.com/datasets/amanneo/diabetic-retinopathy-resized-arranged) and custom dataset [Eye and Not Eye Classification](https://github.com/Renatic-C23-PR504/machine-learning/tree/main/image_data/eyes_classification/dataset)
 * Model : For clinic data, we use XGBoost classifier. For diabetic retinopathy classification, we use Tensorflow
 
 # About Member Machine Learning Path
