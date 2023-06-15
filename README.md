@@ -61,10 +61,12 @@ For dependecies all listed in [requirement.txt](https://github.com/Renatic-C23-P
 ##### Output
 | Key          | Data Type |
 | :----------- | :------- | 
+| `advice`    | string |
 | `prediction`    | boolean |
+| `probabilty`    | string |
 
-## Diabetic Retinopathy Classification
-For dependecies all listed in [requirement.txt](https://github.com/Renatic-C23-PR504/machine-learning/blob/main/requirement.txt) 
+## Diabetic Retinopathy Classification 
+For dependecies all listed in [requirement.txt](https://github.com/Renatic-C23-PR504/machine-learning/blob/main/image_data/requirement.txt) 
 ### Endpoint
 #### POST
 ```
