@@ -1,0 +1,351 @@
+file_paths,LR,class
+./data/4/294_right.jpeg,right,4 - Proliferative DR
+./data/3/26997_right.jpeg,right,3 - Severe
+./data/2/9214_left.jpeg,left,2 - Moderate
+./data/2/10945_right.jpeg,right,2 - Moderate
+./data/4/5105_left.jpeg,left,4 - Proliferative DR
+./data/4/20146_right.jpeg,right,4 - Proliferative DR
+./data/1/12170_left.jpeg,left,1 - Mild
+./data/4/31442_right.jpeg,right,4 - Proliferative DR
+./data/0/16547_right.jpeg,right,0 - No DR
+./data/1/10545_right.jpeg,right,1 - Mild
+./data/0/17921_right.jpeg,right,0 - No DR
+./data/1/3189_right.jpeg,right,1 - Mild
+./data/3/41903_left.jpeg,left,3 - Severe
+./data/2/21568_right.jpeg,right,2 - Moderate
+./data/3/41903_right.jpeg,right,3 - Severe
+./data/0/37669_left.jpeg,left,0 - No DR
+./data/2/38295_right.jpeg,right,2 - Moderate
+./data/4/406_right.jpeg,right,4 - Proliferative DR
+./data/1/39657_right.jpeg,right,1 - Mild
+./data/1/24155_right.jpeg,right,1 - Mild
+./data/0/14405_right.jpeg,right,0 - No DR
+./data/2/29092_right.jpeg,right,2 - Moderate
+./data/1/11547_right.jpeg,right,1 - Mild
+./data/3/13222_right.jpeg,right,3 - Severe
+./data/0/38494_right.jpeg,right,0 - No DR
+./data/0/19226_right.jpeg,right,0 - No DR
+./data/0/19890_right.jpeg,right,0 - No DR
+./data/4/23831_right.jpeg,right,4 - Proliferative DR
+./data/2/38196_left.jpeg,left,2 - Moderate
+./data/4/33287_left.jpeg,left,4 - Proliferative DR
+./data/4/35461_left.jpeg,left,4 - Proliferative DR
+./data/3/10159_right.jpeg,right,3 - Severe
+./data/0/37711_right.jpeg,right,0 - No DR
+./data/2/34066_left.jpeg,left,2 - Moderate
+./data/4/6719_right.jpeg,right,4 - Proliferative DR
+./data/2/12490_left.jpeg,left,2 - Moderate
+./data/1/9933_right.jpeg,right,1 - Mild
+./data/1/23852_right.jpeg,right,1 - Mild
+./data/1/42636_left.jpeg,left,1 - Mild
+./data/4/16_right.jpeg,right,4 - Proliferative DR
+./data/1/13493_right.jpeg,right,1 - Mild
+./data/2/36338_right.jpeg,right,2 - Moderate
+./data/4/40893_right.jpeg,right,4 - Proliferative DR
+./data/1/32412_right.jpeg,right,1 - Mild
+./data/1/13490_left.jpeg,left,1 - Mild
+./data/1/1145_left.jpeg,left,1 - Mild
+./data/4/936_right.jpeg,right,4 - Proliferative DR
+./data/2/18452_right.jpeg,right,2 - Moderate
+./data/2/42122_left.jpeg,left,2 - Moderate
+./data/2/17244_right.jpeg,right,2 - Moderate
+./data/0/35414_left.jpeg,left,0 - No DR
+./data/4/38811_right.jpeg,right,4 - Proliferative DR
+./data/1/5506_left.jpeg,left,1 - Mild
+./data/0/39510_left.jpeg,left,0 - No DR
+./data/2/29961_left.jpeg,left,2 - Moderate
+./data/0/16093_right.jpeg,right,0 - No DR
+./data/1/20913_left.jpeg,left,1 - Mild
+./data/1/43030_right.jpeg,right,1 - Mild
+./data/4/33080_right.jpeg,right,4 - Proliferative DR
+./data/1/40808_left.jpeg,left,1 - Mild
+./data/1/25988_left.jpeg,left,1 - Mild
+./data/4/30039_left.jpeg,left,4 - Proliferative DR
+./data/4/24472_left.jpeg,left,4 - Proliferative DR
+./data/4/21205_left.jpeg,left,4 - Proliferative DR
+./data/3/25723_left.jpeg,left,3 - Severe
+./data/4/7279_left.jpeg,left,4 - Proliferative DR
+./data/0/34027_right.jpeg,right,0 - No DR
+./data/3/15923_right.jpeg,right,3 - Severe
+./data/2/37611_right.jpeg,right,2 - Moderate
+./data/3/25119_right.jpeg,right,3 - Severe
+./data/2/10734_left.jpeg,left,2 - Moderate
+./data/2/36793_right.jpeg,right,2 - Moderate
+./data/0/15893_left.jpeg,left,0 - No DR
+./data/1/34078_left.jpeg,left,1 - Mild
+./data/1/3139_left.jpeg,left,1 - Mild
+./data/3/7631_right.jpeg,right,3 - Severe
+./data/1/24392_right.jpeg,right,1 - Mild
+./data/4/16802_left.jpeg,left,4 - Proliferative DR
+./data/0/36838_left.jpeg,left,0 - No DR
+./data/3/23318_right.jpeg,right,3 - Severe
+./data/2/16886_right.jpeg,right,2 - Moderate
+./data/4/35130_left.jpeg,left,4 - Proliferative DR
+./data/4/10904_right.jpeg,right,4 - Proliferative DR
+./data/2/35301_right.jpeg,right,2 - Moderate
+./data/2/2407_right.jpeg,right,2 - Moderate
+./data/3/7959_right.jpeg,right,3 - Severe
+./data/3/12881_left.jpeg,left,3 - Severe
+./data/1/13766_right.jpeg,right,1 - Mild
+./data/1/16341_right.jpeg,right,1 - Mild
+./data/3/24140_right.jpeg,right,3 - Severe
+./data/4/37708_right.jpeg,right,4 - Proliferative DR
+./data/4/37829_left.jpeg,left,4 - Proliferative DR
+./data/2/12434_right.jpeg,right,2 - Moderate
+./data/3/1420_right.jpeg,right,3 - Severe
+./data/0/20857_left.jpeg,left,0 - No DR
+./data/2/19237_left.jpeg,left,2 - Moderate
+./data/2/5838_right.jpeg,right,2 - Moderate
+./data/1/39033_left.jpeg,left,1 - Mild
+./data/0/37986_left.jpeg,left,0 - No DR
+./data/2/18184_left.jpeg,left,2 - Moderate
+./data/0/19400_right.jpeg,right,0 - No DR
+./data/2/28938_left.jpeg,left,2 - Moderate
+./data/0/851_right.jpeg,right,0 - No DR
+./data/2/33202_left.jpeg,left,2 - Moderate
+./data/0/8654_right.jpeg,right,0 - No DR
+./data/4/44249_right.jpeg,right,4 - Proliferative DR
+./data/1/7411_right.jpeg,right,1 - Mild
+./data/3/44165_right.jpeg,right,3 - Severe
+./data/1/11738_left.jpeg,left,1 - Mild
+./data/1/17113_left.jpeg,left,1 - Mild
+./data/0/13167_right.jpeg,right,0 - No DR
+./data/1/13376_left.jpeg,left,1 - Mild
+./data/1/8430_left.jpeg,left,1 - Mild
+./data/2/22469_right.jpeg,right,2 - Moderate
+./data/2/19064_right.jpeg,right,2 - Moderate
+./data/3/36213_right.jpeg,right,3 - Severe
+./data/1/12063_left.jpeg,left,1 - Mild
+./data/3/16011_left.jpeg,left,3 - Severe
+./data/0/17490_left.jpeg,left,0 - No DR
+./data/3/25593_left.jpeg,left,3 - Severe
+./data/3/15450_left.jpeg,left,3 - Severe
+./data/0/42740_right.jpeg,right,0 - No DR
+./data/4/24773_right.jpeg,right,4 - Proliferative DR
+./data/2/24744_right.jpeg,right,2 - Moderate
+./data/2/37982_right.jpeg,right,2 - Moderate
+./data/1/19004_right.jpeg,right,1 - Mild
+./data/4/5258_left.jpeg,left,4 - Proliferative DR
+./data/3/2901_right.jpeg,right,3 - Severe
+./data/3/39632_left.jpeg,left,3 - Severe
+./data/4/43339_left.jpeg,left,4 - Proliferative DR
+./data/4/30725_right.jpeg,right,4 - Proliferative DR
+./data/0/34786_left.jpeg,left,0 - No DR
+./data/3/40441_right.jpeg,right,3 - Severe
+./data/2/43975_left.jpeg,left,2 - Moderate
+./data/0/41590_left.jpeg,left,0 - No DR
+./data/3/7349_left.jpeg,left,3 - Severe
+./data/3/10606_right.jpeg,right,3 - Severe
+./data/1/20062_left.jpeg,left,1 - Mild
+./data/4/3501_left.jpeg,left,4 - Proliferative DR
+./data/2/12650_left.jpeg,left,2 - Moderate
+./data/0/10930_right.jpeg,right,0 - No DR
+./data/3/4970_right.jpeg,right,3 - Severe
+./data/1/5177_left.jpeg,left,1 - Mild
+./data/0/9789_left.jpeg,left,0 - No DR
+./data/0/39748_left.jpeg,left,0 - No DR
+./data/4/42815_right.jpeg,right,4 - Proliferative DR
+./data/2/28463_right.jpeg,right,2 - Moderate
+./data/0/38831_right.jpeg,right,0 - No DR
+./data/3/19522_left.jpeg,left,3 - Severe
+./data/1/32314_right.jpeg,right,1 - Mild
+./data/1/25637_right.jpeg,right,1 - Mild
+./data/4/31043_left.jpeg,left,4 - Proliferative DR
+./data/3/18573_left.jpeg,left,3 - Severe
+./data/4/10047_right.jpeg,right,4 - Proliferative DR
+./data/0/44281_left.jpeg,left,0 - No DR
+./data/4/33906_right.jpeg,right,4 - Proliferative DR
+./data/0/4941_right.jpeg,right,0 - No DR
+./data/0/9232_right.jpeg,right,0 - No DR
+./data/4/28077_left.jpeg,left,4 - Proliferative DR
+./data/2/15354_left.jpeg,left,2 - Moderate
+./data/2/5848_left.jpeg,left,2 - Moderate
+./data/2/37582_right.jpeg,right,2 - Moderate
+./data/2/3525_right.jpeg,right,2 - Moderate
+./data/0/35463_left.jpeg,left,0 - No DR
+./data/0/29793_right.jpeg,right,0 - No DR
+./data/2/22954_right.jpeg,right,2 - Moderate
+./data/2/31358_left.jpeg,left,2 - Moderate
+./data/2/12859_right.jpeg,right,2 - Moderate
+./data/0/8581_left.jpeg,left,0 - No DR
+./data/3/35124_left.jpeg,left,3 - Severe
+./data/4/13966_left.jpeg,left,4 - Proliferative DR
+./data/4/33812_right.jpeg,right,4 - Proliferative DR
+./data/3/25872_left.jpeg,left,3 - Severe
+./data/0/17673_left.jpeg,left,0 - No DR
+./data/1/27223_right.jpeg,right,1 - Mild
+./data/3/28919_left.jpeg,left,3 - Severe
+./data/2/21852_left.jpeg,left,2 - Moderate
+./data/3/29484_left.jpeg,left,3 - Severe
+./data/3/34547_right.jpeg,right,3 - Severe
+./data/0/15022_left.jpeg,left,0 - No DR
+./data/1/6317_right.jpeg,right,1 - Mild
+./data/1/20179_left.jpeg,left,1 - Mild
+./data/3/16740_right.jpeg,right,3 - Severe
+./data/1/19114_right.jpeg,right,1 - Mild
+./data/0/37374_right.jpeg,right,0 - No DR
+./data/3/41336_left.jpeg,left,3 - Severe
+./data/0/18643_right.jpeg,right,0 - No DR
+./data/1/32833_right.jpeg,right,1 - Mild
+./data/1/25680_right.jpeg,right,1 - Mild
+./data/4/32230_right.jpeg,right,4 - Proliferative DR
+./data/4/41445_left.jpeg,left,4 - Proliferative DR
+./data/1/12227_right.jpeg,right,1 - Mild
+./data/3/21447_left.jpeg,left,3 - Severe
+./data/4/19061_left.jpeg,left,4 - Proliferative DR
+./data/3/38463_left.jpeg,left,3 - Severe
+./data/3/18046_left.jpeg,left,3 - Severe
+./data/3/11889_right.jpeg,right,3 - Severe
+./data/1/32130_right.jpeg,right,1 - Mild
+./data/1/35666_right.jpeg,right,1 - Mild
+./data/4/27597_left.jpeg,left,4 - Proliferative DR
+./data/2/11209_left.jpeg,left,2 - Moderate
+./data/1/37867_left.jpeg,left,1 - Mild
+./data/4/36531_left.jpeg,left,4 - Proliferative DR
+./data/4/9419_right.jpeg,right,4 - Proliferative DR
+./data/1/38080_right.jpeg,right,1 - Mild
+./data/4/30039_right.jpeg,right,4 - Proliferative DR
+./data/4/7945_left.jpeg,left,4 - Proliferative DR
+./data/2/40498_left.jpeg,left,2 - Moderate
+./data/0/37522_left.jpeg,left,0 - No DR
+./data/1/42368_right.jpeg,right,1 - Mild
+./data/3/3379_left.jpeg,left,3 - Severe
+./data/3/3444_right.jpeg,right,3 - Severe
+./data/2/15074_left.jpeg,left,2 - Moderate
+./data/3/40922_right.jpeg,right,3 - Severe
+./data/4/35668_left.jpeg,left,4 - Proliferative DR
+./data/0/44053_left.jpeg,left,0 - No DR
+./data/1/29367_left.jpeg,left,1 - Mild
+./data/1/36442_right.jpeg,right,1 - Mild
+./data/1/30099_left.jpeg,left,1 - Mild
+./data/0/3251_right.jpeg,right,0 - No DR
+./data/4/9518_left.jpeg,left,4 - Proliferative DR
+./data/0/12573_right.jpeg,right,0 - No DR
+./data/4/22379_right.jpeg,right,4 - Proliferative DR
+./data/1/38114_right.jpeg,right,1 - Mild
+./data/4/26772_right.jpeg,right,4 - Proliferative DR
+./data/2/32329_right.jpeg,right,2 - Moderate
+./data/0/1387_left.jpeg,left,0 - No DR
+./data/1/11443_left.jpeg,left,1 - Mild
+./data/4/17899_right.jpeg,right,4 - Proliferative DR
+./data/4/2338_left.jpeg,left,4 - Proliferative DR
+./data/1/33507_right.jpeg,right,1 - Mild
+./data/4/43379_left.jpeg,left,4 - Proliferative DR
+./data/0/31424_left.jpeg,left,0 - No DR
+./data/2/25955_left.jpeg,left,2 - Moderate
+./data/0/24171_left.jpeg,left,0 - No DR
+./data/0/16088_left.jpeg,left,0 - No DR
+./data/2/6228_left.jpeg,left,2 - Moderate
+./data/3/40405_left.jpeg,left,3 - Severe
+./data/4/1084_left.jpeg,left,4 - Proliferative DR
+./data/2/26108_right.jpeg,right,2 - Moderate
+./data/3/32726_right.jpeg,right,3 - Severe
+./data/0/41377_right.jpeg,right,0 - No DR
+./data/2/11147_left.jpeg,left,2 - Moderate
+./data/4/11032_left.jpeg,left,4 - Proliferative DR
+./data/0/21354_left.jpeg,left,0 - No DR
+./data/0/38421_right.jpeg,right,0 - No DR
+./data/1/15476_right.jpeg,right,1 - Mild
+./data/3/41953_left.jpeg,left,3 - Severe
+./data/1/17509_left.jpeg,left,1 - Mild
+./data/0/25131_right.jpeg,right,0 - No DR
+./data/3/43831_left.jpeg,left,3 - Severe
+./data/4/9783_right.jpeg,right,4 - Proliferative DR
+./data/1/23335_left.jpeg,left,1 - Mild
+./data/2/1412_left.jpeg,left,2 - Moderate
+./data/3/1162_left.jpeg,left,3 - Severe
+./data/4/19604_right.jpeg,right,4 - Proliferative DR
+./data/4/2880_right.jpeg,right,4 - Proliferative DR
+./data/3/36978_right.jpeg,right,3 - Severe
+./data/1/2531_left.jpeg,left,1 - Mild
+./data/0/41532_left.jpeg,left,0 - No DR
+./data/2/23961_left.jpeg,left,2 - Moderate
+./data/0/19688_left.jpeg,left,0 - No DR
+./data/2/26209_left.jpeg,left,2 - Moderate
+./data/3/36989_right.jpeg,right,3 - Severe
+./data/3/36740_left.jpeg,left,3 - Severe
+./data/3/8363_left.jpeg,left,3 - Severe
+./data/2/6484_right.jpeg,right,2 - Moderate
+./data/4/37332_left.jpeg,left,4 - Proliferative DR
+./data/1/8347_left.jpeg,left,1 - Mild
+./data/3/25119_left.jpeg,left,3 - Severe
+./data/2/32307_right.jpeg,right,2 - Moderate
+./data/4/17669_right.jpeg,right,4 - Proliferative DR
+./data/4/30570_left.jpeg,left,4 - Proliferative DR
+./data/2/15402_right.jpeg,right,2 - Moderate
+./data/3/15376_right.jpeg,right,3 - Severe
+./data/0/12646_left.jpeg,left,0 - No DR
+./data/0/30655_left.jpeg,left,0 - No DR
+./data/0/28599_right.jpeg,right,0 - No DR
+./data/0/1803_right.jpeg,right,0 - No DR
+./data/0/31811_left.jpeg,left,0 - No DR
+./data/1/240_right.jpeg,right,1 - Mild
+./data/3/29097_right.jpeg,right,3 - Severe
+./data/4/19771_right.jpeg,right,4 - Proliferative DR
+./data/3/11858_left.jpeg,left,3 - Severe
+./data/2/6591_left.jpeg,left,2 - Moderate
+./data/2/37593_right.jpeg,right,2 - Moderate
+./data/2/33227_left.jpeg,left,2 - Moderate
+./data/0/42453_right.jpeg,right,0 - No DR
+./data/2/13780_left.jpeg,left,2 - Moderate
+./data/2/42633_right.jpeg,right,2 - Moderate
+./data/2/28387_right.jpeg,right,2 - Moderate
+./data/0/37598_left.jpeg,left,0 - No DR
+./data/2/25558_right.jpeg,right,2 - Moderate
+./data/4/43050_left.jpeg,left,4 - Proliferative DR
+./data/4/42358_left.jpeg,left,4 - Proliferative DR
+./data/2/20985_left.jpeg,left,2 - Moderate
+./data/3/509_left.jpeg,left,3 - Severe
+./data/0/7887_right.jpeg,right,0 - No DR
+./data/0/18275_left.jpeg,left,0 - No DR
+./data/0/7896_left.jpeg,left,0 - No DR
+./data/1/11915_left.jpeg,left,1 - Mild
+./data/4/16392_right.jpeg,right,4 - Proliferative DR
+./data/3/31962_right.jpeg,right,3 - Severe
+./data/1/32282_left.jpeg,left,1 - Mild
+./data/4/18143_right.jpeg,right,4 - Proliferative DR
+./data/1/13751_left.jpeg,left,1 - Mild
+./data/0/20324_left.jpeg,left,0 - No DR
+./data/4/41339_right.jpeg,right,4 - Proliferative DR
+./data/4/1941_left.jpeg,left,4 - Proliferative DR
+./data/0/32381_left.jpeg,left,0 - No DR
+./data/2/38795_left.jpeg,left,2 - Moderate
+./data/1/30_left.jpeg,left,1 - Mild
+./data/4/29703_right.jpeg,right,4 - Proliferative DR
+./data/3/31967_right.jpeg,right,3 - Severe
+./data/1/29238_right.jpeg,right,1 - Mild
+./data/3/14224_left.jpeg,left,3 - Severe
+./data/0/32905_right.jpeg,right,0 - No DR
+./data/4/294_left.jpeg,left,4 - Proliferative DR
+./data/3/35850_right.jpeg,right,3 - Severe
+./data/3/932_left.jpeg,left,3 - Severe
+./data/4/24163_left.jpeg,left,4 - Proliferative DR
+./data/1/40551_left.jpeg,left,1 - Mild
+./data/3/29365_right.jpeg,right,3 - Severe
+./data/1/42834_left.jpeg,left,1 - Mild
+./data/2/32870_left.jpeg,left,2 - Moderate
+./data/2/29168_right.jpeg,right,2 - Moderate
+./data/1/32566_right.jpeg,right,1 - Mild
+./data/1/35322_right.jpeg,right,1 - Mild
+./data/2/8830_left.jpeg,left,2 - Moderate
+./data/4/32630_left.jpeg,left,4 - Proliferative DR
+./data/1/20556_left.jpeg,left,1 - Mild
+./data/0/6592_left.jpeg,left,0 - No DR
+./data/3/24222_left.jpeg,left,3 - Severe
+./data/0/14377_right.jpeg,right,0 - No DR
+./data/2/28621_right.jpeg,right,2 - Moderate
+./data/3/6433_right.jpeg,right,3 - Severe
+./data/2/43042_left.jpeg,left,2 - Moderate
+./data/3/4967_left.jpeg,left,3 - Severe
+./data/3/99_left.jpeg,left,3 - Severe
+./data/3/11590_right.jpeg,right,3 - Severe
+./data/0/5788_right.jpeg,right,0 - No DR
+./data/0/968_right.jpeg,right,0 - No DR
+./data/2/16294_left.jpeg,left,2 - Moderate
+./data/3/22930_left.jpeg,left,3 - Severe
+./data/3/1177_left.jpeg,left,3 - Severe
+./data/3/24772_right.jpeg,right,3 - Severe
+./data/2/32159_right.jpeg,right,2 - Moderate
+./data/0/40606_right.jpeg,right,0 - No DR
+./data/3/14466_right.jpeg,right,3 - Severe
+./data/1/5423_left.jpeg,left,1 - Mild
