@@ -1,7 +1,7 @@
 
 <div align="center">
   
-  # Machine Learning Renatic
+  # 👁️ Machine Learning Renatic 👁️ 
   
   <img src="https://img.shields.io/github/repo-size/Renatic-C23-PR504/machine-learning?style=for-the-badge">
   <img alt="Visitor Badge" src="https://visitor-badge.feriirawann.repl.co?username=Renatic-C23-PR504&repo=machine-learning&label=VISITOR&style=for-the-badge&color=blue&contentType=svg">
