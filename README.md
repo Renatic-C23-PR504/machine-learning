@@ -26,7 +26,8 @@ This repository is used to build machine learning models to predict whether a pe
 For machine learning algorithm, we use XGBoost Classifier. In terms of the features, there are eight variables: Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, and Age. And the output are binary, 0 if there is no diabetes and 1 if there is a diabetes. We also doing feature engineering so that our model get higher accuracy. At the end we got 94% accuracy.
 
 ## Diabetic Retinopathy Classification
-For base model, we use MobileNet to get fast prediction and good accuracy. We also fine-tuning our base model so that our final model compatible with our dataset. Here are graphs showing accuracy and loss during training
+We built two models for this classification. The first is to classify whether the image is an eye or not, and the second is to classify the type of diabetic retinopathy.
+
 ![metrics.png](https://raw.githubusercontent.com/Renatic-C23-PR504/machine-learning/main/assets/metrics.png)
 
 <!-- Tables -->
