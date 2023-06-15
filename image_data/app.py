@@ -54,34 +54,40 @@ def index():
 
 @app.route("/predict", methods = ["POST"]) 
 def predict():
-    if 'image_url' in request.json:
-        image_url = request.json['image_url']
-        response = requests.get(image_url)
-        img = Image.open(BytesIO(response.content))
-        dr_img = transform_image(img, 224) # old model using 224x224
-        # dr_img = transform_image(img, 350) # new model using 350x350
-        eye_img = transform_image(img, 150)
-        
-        # make predictions to detect if the image has retina on it
-        eye_prediction = predict_eye_image(eye_img)
-        if eye_prediction:
-            # make predictions to detect severe levels of 
-            # diabetic retinopathy
-            dr_prediction = predict_dr_image(dr_img)
+    try:
+        if 'image_url' in request.json:
+            image_url = request.json['image_url']
+            response = requests.get(image_url)
+            img = Image.open(BytesIO(response.content))
+            dr_img = transform_image(img, 224) # old model using 224x224
+            # dr_img = transform_image(img, 350) # new model using 350x350
+            eye_img = transform_image(img, 150)
+            
+            # make predictions to detect if the image has retina on it
+            eye_prediction = predict_eye_image(eye_img)
+            if eye_prediction:
+                # make predictions to detect severe levels of 
+                # diabetic retinopathy
+                dr_prediction = predict_dr_image(dr_img)
+                dict = {
+                    'message': 'Diabetic Retinopathy Level',
+                    'error': False,
+                    'retina_detected': eye_prediction,
+                    'dr_class': dr_prediction
+                }
+                
+                
+                return jsonify(dict)
             dict = {
-                'message': 'Diabetic Retinopathy Level',
+                'message': 'Retina tidak terdeteksi',
                 'error': False,
                 'retina_detected': eye_prediction,
-                'dr_class': dr_prediction
+                'dr_class': ''
             }
             return jsonify(dict)
-        dict = {
-            'message': 'Retina tidak terdeteksi',
-            'error': False,
-            'retina_detected': eye_prediction,
-            'dr_class': ''
-        }
-        return jsonify(dict)
+    except Exception as e:
+        return jsonify({'error':True,
+                        'message':str(e)})
     
 if __name__ == "__main__":
     app.run(debug = True)
