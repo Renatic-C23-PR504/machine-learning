@@ -51,7 +51,7 @@ While the details of the model architecture for diabetic retinopathy can be seen
 <div style="display:flex"> 
   <img width="50%" src="https://raw.githubusercontent.com/Renatic-C23-PR504/machine-learning/main/assets/output_accuracy_eye_classification.png">
 
-  <img width="50%" src="https://raw.githubusercontent.com/Renatic-C23-PR504/machine-learning/main/assets/output_loss_eye_classification.png">
+  <img width="49%" src="https://raw.githubusercontent.com/Renatic-C23-PR504/machine-learning/main/assets/output_loss_eye_classification.png">
 </div>
 
 #### Diabetic Retinopathy Classification Model
@@ -69,7 +69,7 @@ While the details of the model architecture for diabetic retinopathy can be seen
 # Mode Deployment
 For deployment we separate clinic data and diabetic retinopathy classification to avoid compatibility issue. Both are using Flask to deploy the model to Google Cloud Run
 ## Clinic Data
-For dependecies all listed in [requirement.txt](https://github.com/Renatic-C23-PR504/machine-learning/blob/main/clinic-data/deployment/requirement.txt)
+> For dependecies all listed in [requirement.txt](https://github.com/Renatic-C23-PR504/machine-learning/blob/main/clinic-data/deployment/requirement.txt)
 ### Endpoint
 #### POST
 ```
@@ -95,6 +95,7 @@ For dependecies all listed in [requirement.txt](https://github.com/Renatic-C23-P
 | `probabilty`    | string |
 
 ## Diabetic Retinopathy Classification 
+> If you want to run this locally, please check [deploy-api-image](https://github.com/Renatic-C23-PR504/machine-learning/tree/deploy-image-api) branch.  
 For dependecies all listed in [requirement.txt](https://github.com/Renatic-C23-PR504/machine-learning/blob/main/image_data/requirement.txt) 
 ### Endpoint
 #### POST
