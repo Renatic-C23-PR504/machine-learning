@@ -10,19 +10,30 @@
 
 ## How to use locally?
 First, clone this branch from this repository with:
-`git clone --single-branch --branch deploy-api-image https://github.com/Renatic-C23-PR504/machine-learning.git`
+
+```
+git clone --single-branch --branch deploy-api-image https://github.com/Renatic-C23-PR504/machine-learning.git
+```
 
 Now, create a virtual environment to run the project
-`py -3 -m venv .venv`
+```
+py -3 -m venv .venv
+```
 
 Then, activate the virtual environment
-`.venv\Scripts\activate` 
+```
+.venv\Scripts\activate
+```
 
 Install the requirements from the `requirements.txt` file:
-`pip install -r /path/to/requirements.txt`
+```
+pip install -r /path/to/requirements.txt
+```
 
 Run the `app.py` file with:
-`py app.py`
+```
+py app.py
+```
 
 Now, it will run in localhost.
 
@@ -36,6 +47,8 @@ Now, it will run in localhost.
 | :----------- | :------- | :------- | 
 | `img_url`    | Required | string |
 
+
+
 #### Output
 | Key          | Data Type |
 | :----------- | :------- | 
@@ -44,6 +57,38 @@ Now, it will run in localhost.
 | `message`    | string |
 | `retina_detected`    | boolean |
 
+Example:  
+Input
+```json
+{
+    "image_url": "https://storage.googleapis.com/renatic-image/1686665526642_1650786148646.jpg"
+}
+```
+Output
+```json
+{
+    "dr_class": "",
+    "error": false,
+    "message": "Retina tidak terdeteksi",
+    "retina_detected": false
+}
+```
+
+Input
+```json
+{
+    "image_url": "https://storage.googleapis.com/renatic-image/0a4e1a29ffff.png"
+}
+```
+Output
+``` json
+{
+    "dr_class": "No DR",
+    "error": false,
+    "message": "Diabetic Retinopathy Level",
+    "retina_detected": true
+}
+```
 
 ## About Member 
 | Members                        | Github                                                                                                                                            | LinkedIn                                                                                                                                                                         |
