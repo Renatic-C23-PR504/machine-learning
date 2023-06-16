@@ -12,7 +12,7 @@
 First, clone this branch from this repository with:
 
 ```
-git clone --single-branch --branch deploy-api-image https://github.com/Renatic-C23-PR504/machine-learning.git
+git clone --single-branch --branch deploy-image-api https://github.com/Renatic-C23-PR504/machine-learning.git
 ```
 
 Now, create a virtual environment to run the project
