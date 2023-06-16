@@ -23,10 +23,10 @@ This repository is used to build machine learning models to predict whether a pe
 
 # Model Development
 ## Clinic Data
-For machine learning algorithm, we use XGBoost Classifier. In terms of the features, there are eight variables: Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, and Age. And the output are binary, 0 if there is no diabetes and 1 if there is a diabetes. We also doing feature engineering so that our model get higher accuracy. At the end we got 94% accuracy.
+For machine learning algorithm, we use XGBoost Classifier. In terms of the features, there are eight variables: Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, and Age. And the output is binary, 0 if there is no diabetes and 1 if there is diabetes. We also doing feature engineering so that our model gets higher accuracy. At the end, we got 94% accuracy.
 
 ## Diabetic Retinopathy Classification
-We built two models for this classification. The first is to classify whether the image is an eye or not, and the second is to classify the type of diabetic retinopathy. The first model we built uses a simple CNN architecture because the features contained in the eye or retina are obviously very different from other objects, such as cars, cats or humans. This model is used as a filter to ensure that the images fed into the diabetic retinopathy classification model are images of the retina of the eye. The second model we built uses transfer learning techniques to speed up the training process and produce a good model. We use the pre-trained MobileNetV2 model that is already available in the [Keras application](https://keras.io/api/applications/mobilenet/#mobilenetv2-function).
+We built two models for this classification. The first is to classify whether the image is an eye or not, and the second is to classify the type of diabetic retinopathy. The first model we built uses a simple CNN architecture because the features contained in the eye or retina are obviously very different from other objects, such as cars, cats, or humans. This model is used as a filter to ensure that the images fed into the diabetic retinopathy classification model are images of the retina, not other objects. We built the second model using transfer learning techniques to speed up the training process and produce a good model. We use the pre-trained MobileNetV2 model that is already available in the [Keras application](https://keras.io/api/applications/mobilenet/#mobilenetv2-function).
 
 ### Architecture 
 The detail model architecture for the "eye/not-eye" model are using tensorflow sequential model as shown below.
@@ -69,6 +69,7 @@ While the details of the model architecture for diabetic retinopathy can be seen
 # Mode Deployment
 For deployment we separate clinic data and diabetic retinopathy classification to avoid compatibility issue. Both are using Flask to deploy the model to Google Cloud Run
 ## Clinic Data
+> If you want to run this locally, please check [deploy-clinical-data-api](https://github.com/Renatic-C23-PR504/machine-learning/tree/deploy-clinical-data-api) branch.   
 > For dependecies all listed in [requirement.txt](https://github.com/Renatic-C23-PR504/machine-learning/blob/main/clinic-data/deployment/requirement.txt)
 ### Endpoint
 #### POST
