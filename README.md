@@ -26,47 +26,45 @@ This repository is used to build machine learning models to predict whether a pe
 For machine learning algorithm, we use XGBoost Classifier. In terms of the features, there are eight variables: Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, and Age. And the output are binary, 0 if there is no diabetes and 1 if there is a diabetes. We also doing feature engineering so that our model get higher accuracy. At the end we got 94% accuracy.
 
 ## Diabetic Retinopathy Classification
-We built two models for this classification. The first is to classify whether the image is an eye or not, and the second is to classify the type of diabetic retinopathy.
+We built two models for this classification. The first is to classify whether the image is an eye or not, and the second is to classify the type of diabetic retinopathy. The first model we built uses a simple CNN architecture because the features contained in the eye or retina are obviously very different from other objects, such as cars, cats or humans. This model is used as a filter to ensure that the images fed into the diabetic retinopathy classification model are images of the retina of the eye. The second model we built uses transfer learning techniques to speed up the training process and produce a good model. We use the pre-trained MobileNetV2 model that is already available in the [Keras application](https://keras.io/api/applications/mobilenet/#mobilenetv2-function).
 
+### Architecture 
 The detail model architecture for the "eye/not-eye" model are using tensorflow sequential model as shown below.
   * Conv2D layer (`filter = 16`, `kernel size = (3,3)`, `input shape = (150,150,3)`)
   * MaxPooling2D layer (`(2,2) pool size`)
   * Conv2D layer (`filter = 32`, `kernel size = (3,3)`)
   * MaxPooling2D layer (`(2,2) pool size`)
   * Flatten layer
-  * Dense layer (`1 unit size`, `activation = relu`)
+  * Dense layer (`64 unit size`, `activation = relu`)
   * Dense layer (`1 unit size`, `activation = sigmoid`)
 
 
 While the details of the model architecture for diabetic retinopathy can be seen below.
-  * Pretrained layer
+  * Pretrained layer (`MobileNetV2`)
   * Globar Average Pooling layer 
   * Dropout layer (`0.4`)
   * Dense layer (`128 unit size`, `activation = relu`)
   * Dense layer (`5 unit size`, `activation = softmax`)
 
-Or you can see the model architecture here:
+### Metrics 
+#### Eye Classification Model
+<div style="display:flex"> 
+  <img width="50%" src="https://raw.githubusercontent.com/Renatic-C23-PR504/machine-learning/main/assets/output_accuracy_eye_classification.png">
 
-<details>
-  
-  <summary><h4>Diabetic Retinopathy Architecture</h4></summary>
-  
-  ![dr model](https://raw.githubusercontent.com/Renatic-C23-PR504/machine-learning/main/assets/model_dr.png)
+  <img width="50%" src="https://raw.githubusercontent.com/Renatic-C23-PR504/machine-learning/main/assets/output_loss_eye_classification.png">
+</div>
 
-</details>
-
-
-
+#### Diabetic Retinopathy Classification Model
 
 ![metrics.png](https://raw.githubusercontent.com/Renatic-C23-PR504/machine-learning/main/assets/metrics.png)
 
 <!-- Tables -->
-| Metrics     | Score          |
-| -------- | -------------- |
-| accuracy | 0.7425 |
-| val_accuracy | 0.7411 |
-| loss | 0.7776 |
-| val_loss | 0.7704 |
+| Metrics      | Diabetic Retinopathy    | Eye |
+| ------------ | ------ | -------------------- |
+| accuracy     | 0.7425 | 0.9985 |
+| val_accuracy | 0.7411 | 1.0000 |
+| loss         | 0.7776 | 7.1724e-04 |
+| val_loss     | 0.7704 | 0.0040 |
 
 # Mode Deployment
 For deployment we separate clinic data and diabetic retinopathy classification to avoid compatibility issue. Both are using Flask to deploy the model to Google Cloud Run
@@ -115,3 +113,4 @@ For dependecies all listed in [requirement.txt](https://github.com/Renatic-C23-P
 | `error`    | boolean |
 | `message`    | string |
 | `retina_detected`    | boolean |
+
