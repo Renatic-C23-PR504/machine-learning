@@ -69,7 +69,7 @@ While the details of the model architecture for diabetic retinopathy can be seen
 # Mode Deployment
 For deployment we separate clinic data and diabetic retinopathy classification to avoid compatibility issue. Both are using Flask to deploy the model to Google Cloud Run
 ## Clinic Data
-> If you want to run this locally, please check [deploy-clinical-data-api](https://github.com/Renatic-C23-PR504/machine-learning/tree/deploy-clinical-data-api) branch. 
+> If you want to run this locally, please check [deploy-clinical-data-api](https://github.com/Renatic-C23-PR504/machine-learning/tree/deploy-clinical-data-api) branch.   
 > For dependecies all listed in [requirement.txt](https://github.com/Renatic-C23-PR504/machine-learning/blob/main/clinic-data/deployment/requirement.txt)
 ### Endpoint
 #### POST
