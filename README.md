@@ -28,6 +28,27 @@ For machine learning algorithm, we use XGBoost Classifier. In terms of the featu
 ## Diabetic Retinopathy Classification
 We built two models for this classification. The first is to classify whether the image is an eye or not, and the second is to classify the type of diabetic retinopathy.
 
+The detail model architecture for the "eye/not-eye" model are using tensorflow sequential model as shown below.
+  * Conv2D layer (`filter = 16`, `kernel size = (3,3)`, `input shape = (150,150,3)`)
+  * MaxPooling2D layer (`(2,2) pool size`)
+  * Conv2D layer (`filter = 32`, `kernel size = (3,3)`)
+  * MaxPooling2D layer (`(2,2) pool size`)
+  * Flatten layer
+  * Dense layer (`1 unit size`, `activation = relu`)
+  * Dense layer (`1 unit size`, `activation = sigmoid`)
+
+
+While the details of the model architecture for diabetic retinopathy can be seen below.
+  * Pretrained layer
+  * Globar Average Pooling layer 
+  * Dropout layer (`0.4`)
+  * Dense layer (`128 unit size`, `activation = relu`)
+  * Dense layer (`5 unit size`, `activation = softmax`)
+
+Or you can see the model architecture here:
+https://github.com/Renatic-C23-PR504/machine-learning/blob/main/assets/model_dr.png
+
+
 ![metrics.png](https://raw.githubusercontent.com/Renatic-C23-PR504/machine-learning/main/assets/metrics.png)
 
 <!-- Tables -->
