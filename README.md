@@ -46,7 +46,16 @@ While the details of the model architecture for diabetic retinopathy can be seen
   * Dense layer (`5 unit size`, `activation = softmax`)
 
 Or you can see the model architecture here:
-https://github.com/Renatic-C23-PR504/machine-learning/blob/main/assets/model_dr.png
+
+<details>
+  
+  <summary><h4>Diabetic Retinopathy Architecture</h4></summary>
+  
+  ![dr model](https://raw.githubusercontent.com/Renatic-C23-PR504/machine-learning/main/assets/model_dr.png)
+
+</details>
+
+
 
 
 ![metrics.png](https://raw.githubusercontent.com/Renatic-C23-PR504/machine-learning/main/assets/metrics.png)
