@@ -27,7 +27,7 @@ Then, activate the virtual environment
 
 Install the requirements from the `requirements.txt` file:
 ```
-pip install -r /path/to/requirements.txt
+pip install -r requirement.txt
 ```
 
 Run the `app.py` file with:
